@@ -13,6 +13,7 @@ service = Service()
 options = Options()
 options.add_argument("--headless") 
 options.add_argument("--disable-gpu")
+options.add_argument("--disable-notifications")
 options.add_argument("--no-sandbox")
 
 driver = webdriver.Chrome(service=service, options=options)
@@ -64,7 +65,7 @@ while True:
         
     except IndexError:
         # Se atingir o fim dos links disponíveis na página, para o loop
-        print("Fim dos links de" + busca + " encontrados!")
+        print("Fim dos links de " + busca + " encontrados!")
         break
 
 print(f"Arquivo '{nome_arquivo}' criado e dados gravados com sucesso!")
