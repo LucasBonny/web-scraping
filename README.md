@@ -40,3 +40,18 @@ python ./busca_facebook.py
 ```
 
 Agora é só esperar a busca terminar e o resultado estará disponível no arquivo `busca_sua_busca.txt`.
+
+### Entrar nos grupos
+
+Se por acaso queira entrar nos grupos do facebook, basta alterar as linhas 9 e 10
+
+```py
+arquivo_busca = "sua_busca_aqui.txt" # nome do arquivo que terá a lista de grupos encontrados
+tempo_espera = 120 # entrar a cada 2 minutos = 120 segundos
+```
+
+Para executar iniciar, basta usar o comando abaixo:
+
+```bash
+python .\entrar_grupo_facebook.py
+```
